@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toro Inoue Station</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="passengerCounter">
+      <p class="appTitle">Toro Inoue Station</p>
+      <div class="passengerDisplay">
+        <h1>People Entered:</h1>
+        <h2 id="countElement">0</h2>
+      </div>
+      <div class="countingButtons">
+        <button id="incrementButton" onclick="increment()">+</button>
+        <button id="decrementButton" onclick="decrement()">-</button>
+      </div>
+      <div class="timeDisplay">
+        <div class="localDisplay">
+          <p class="localTitle">Local</p>
+          <div id="localTime"></div>
+        </div>
+        <div class="japanDisplay">
+          <p class="japanTitle">Tokyo</p>
+          <div id="japanTime"></div>
+        </div>
+        <div class="laDisplay">
+          <p class="laTitle">Los Angeles</p>
+          <div id="laTime"></div>
+        </div>
+        <div class="londonDisplay">
+          <p class="londonTitle">London</p>
+          <div id="londonTime"></div>
+        </div>
+      </div>
+      <button id="saveButton" onclick="save()">SAVE</button>
+      <div class="saveContainer">
+        <p id="saveElement">Previous Entries:</p>
+        <div id="saveEntries"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
